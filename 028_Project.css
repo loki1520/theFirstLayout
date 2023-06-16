@@ -1,0 +1,237 @@
+/* <!-- второй способ: cmd+shift+p - >google fonts: insert CSS @important> - inter (raleway) - enter --> */
+/* убрать лишние шрифты, оставить только нужные, regular, medium - 500, bold - 700, black 900 */
+
+/* &subset=cyrillic-ext для кириллицы */
+/* &display=swap для быстрой загрузки шрифтов */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Raleway:wght@600&display=swap');
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    background: url("../Project/Img/Container-img.jpg") center no-repeat;
+    background-position: top;
+    background-size: 1600px;
+    width: 1500px;
+    margin: 0 auto;
+
+}
+
+
+
+.container_head {
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 0 10%;
+    margin-bottom: 314px;
+}
+
+.header__logo {
+    margin-top: 22%;
+    margin-left: -103%;
+}
+
+.nav {
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 381px;
+    margin-top: -16px;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 51px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s linear;
+
+
+    /* плавность перемены цвета */
+}
+
+.nav_link:hover {
+    color: orange;
+}
+
+/* полоски под навигацией */
+.nav_link:after {
+    display: block;
+    content: "";
+    height: 3px;
+    background-color: orange;
+    /* position: absolute; */
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+/* можно поставить  opacity: 0;
+ transition: opacity 0.3s linear; */
+
+/* полоски тольк при наведении */
+.nav_link:hover:after {
+    display: block;
+    /* можно поставить  opacity: 1;*/
+}
+
+/* main */
+
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.main__text {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 130px;
+    border: 0;
+    line-height: 1;
+
+}
+
+.line__1 {
+    font-style: italic;
+    margin-left: -10px;
+    letter-spacing: -3px;
+}
+
+.line__2 {}
+
+.line__3 {
+    margin-left: 198px;
+    margin-bottom: 70px;
+}
+
+.descr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 148px;
+}
+
+.descr__item {
+    max-width: 377px;
+}
+
+.descr__link {
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 36.49%;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 9px;
+    text-decoration: none;
+    background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
+    background-position: 0 82%;
+    background-size: 100% 3px;
+    background-repeat: repeat-x;
+    position: relative;
+}
+
+.point {
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    left: 237px;
+    top: 4px;
+}
+
+.main__info {
+    color: black;
+    display: flex;
+}
+
+.about {
+    flex-basis: 726px;
+    font-size: 130px;
+    margin: 0;
+    line-height: 1;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.about__inf {
+    max-width: 620px;
+    line-height: 150%;
+}
+
+.first {
+    margin-top: -12px;
+}
+
+.second {
+    margin-top: 50px;
+}
+
+.about__image {
+    display: flex;
+    color: black;
+}
+
+.about__img {
+    margin-right: 352px;
+    height: 100%;
+    margin-top: 38px;
+}
+
+.table {
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 700px;
+    margin-top: 78px;
+    margin-left: -5px;
+}
+
+.counter {
+    max-width: 187px;
+    min-width: 305px;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.ins {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -2px;
+    line-height: 119%;
+    max-width: 198px;
+}
